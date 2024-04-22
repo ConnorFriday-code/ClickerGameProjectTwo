@@ -54,7 +54,23 @@ Features that can be added if time is available
 
 ### Wireframes
 
+#### Phone Wireframe:
+
+![Phone Wireframe Balsamiq](https://share.balsamiq.com/c/rJjbfQYprzGwqrXFBgQ3Bo.png)
+
+#### Tablet Wireframe:
+
+![Phone Wireframe Balsamiq](https://share.balsamiq.com/c/nX1DeTCt7okU96tqXCbnJA.png)
+
+#### Computer Wireframe:
+
+![Phone Wireframe Balsamiq](https://share.balsamiq.com/c/n7ELZUf8zZud21L3UMfzXV.png)
+
 ### Design choices
+
+#### Colours
+
+#### Layout
 
 ## Features
 
@@ -64,6 +80,10 @@ Features that can be added if time is available
 
 ## Technology Used
 
+ * [Balsamiq](https://balsamiq.cloud)
+
+Used in the planning and making of the website's wireframe.
+
 ## Testing
 
 ## Deployment
@@ -72,6 +92,10 @@ Features that can be added if time is available
 
 ### Code
 
-### Media
+### Media/Content
+
+ * [Balsamiq](https://balsamiq.cloud)
+
+Used in the planning and making of the website's wireframe.
 
 ### Thanks
