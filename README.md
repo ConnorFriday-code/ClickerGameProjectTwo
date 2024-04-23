@@ -84,6 +84,10 @@ Social media icons are yellow to create an arua of positivity, as we want users 
 
 #### Layout
 
+The page's layout is blocked out into large chunks with the game area being the largest. This is because it is the main focus of the page. Then the page is broken down further into three medium sized sections, consisting of: Title/h1, score and timer, and upgrades. This is because I want them to still recieve attention from the user but secondarily to the main content/game. The large blocky elements with little/no small elements (if you exclude the target) ensures the page is quick and easy to read, which is important when the game has a timer.
+
+Lastily, the welcome/instructions and the game over divs. The instructions section will cover the screen upon the page loading, only disapearing once the user selects the 'play' button. The game over screen is similar in that it covers the screen and the button at the bottom resets the game. This is because they both server the same purpose: stopping the user from interacting with the game until either they have read how to play or preventing the user from playing the game once finished. Both of them are very simple in design as to get their points across as quickly as possible.
+
 ## Features
 
 ### Existing features
