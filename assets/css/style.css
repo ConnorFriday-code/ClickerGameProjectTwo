@@ -20,6 +20,10 @@ body{
     text-transform: uppercase;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 .oswald{
     font-family: "Oswald", sans-serif;
 }
@@ -103,4 +107,27 @@ body{
     position: absolute;
     width: 60px;
     height: 60px;
+}
+
+/*------------------------------------------------------------ upgrades-area*/
+
+#upgrades-area{
+    width: 100%;
+}
+
+#upgrade-bar{
+    width: 100%;
+    display: flex;
+    margin: 10px auto;
+}
+
+.upgrade-card{
+    margin: 5px auto;
+    width: 15%;
+    padding: 5px;
+    background-color: #f7f72e;
+}
+
+.upgrade-card p{
+    margin: 1;
 }
