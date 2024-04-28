@@ -1,0 +1,32 @@
+$(document).ready(function(){
+    $("#instructions-outer-div").addClass("page-cover")
+
+    let innerInstructions = $("<div></div>").addClass("instructions-outer-box");
+
+    let howToPlayh2 = $("<h2>How To Play!</h2>").addClass("how-to-play-title bg-yellow center");
+
+    let howToPlayDesc = $(`
+    <div class="bg-grey how-to-play-desc">
+        <h3>What to do</h3>
+        <p>p1</p>
+    </div>
+    <div class="bg-grey how-to-play-desc">
+        <h3>upgrades</h3>
+    </div>
+    <div class="bg-grey how-to-play-desc">
+        <h3>The timer and defeat</h3>
+    </div>
+    `);
+
+    let startGame = $(`
+    <div>
+        <p>Play</p>
+    </div>
+    `).addClass("how-to-play-start bg-yellow center");
+
+    $("#instructions-outer-div").append(innerInstructions);
+
+    $(".instructions-outer-box").append(howToPlayh2);
+    $(".instructions-outer-box").append(howToPlayDesc);
+    $(".instructions-outer-box").append(startGame);
+})

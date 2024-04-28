@@ -12,6 +12,10 @@ body{
     background-color: #f7f72e;
 }
 
+.bg-grey{
+    background-color: #9b9b9b;
+}
+
 .center{
     text-align: center;
 }
@@ -103,7 +107,6 @@ header{
     width: 90%;
     height: 50vh;
     margin: 0 auto;
-    background-color: #9b9b9b;
     position: relative;
 }
 
@@ -148,9 +151,47 @@ footer{
     text-align: center;
 }
 
+#social-media-bottom ul{
+    padding: 0;
+}
+
 #social-media-bottom ul li{
     list-style: none;
     font-size: 24px;
+}
+
+/*------------------------------------------------------------ instructions*/
+
+.page-cover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 20;
+}
+
+.instructions-outer-box{
+    width: 50%;
+    background-color: #6b85a3;
+    margin: auto;
+    z-index: 21;
+    padding: 10px;
+}
+
+.how-to-play-title{
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.how-to-play-desc{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.how-to-play-start{
+    width: 60%;
+    margin: 0 auto;
 }
 
 /*------------------------------------------------------------ @media (mobile/small)*/
