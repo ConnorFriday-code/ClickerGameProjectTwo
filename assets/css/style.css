@@ -166,7 +166,7 @@ footer{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
+    position: fixed;
     z-index: 20;
 }
 
@@ -192,6 +192,7 @@ footer{
 .how-to-play-start{
     width: 60%;
     margin: 0 auto;
+    font-size: 32px;
 }
 
 /*------------------------------------------------------------ @media (mobile/small)*/
