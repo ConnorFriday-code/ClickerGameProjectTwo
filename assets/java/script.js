@@ -61,11 +61,10 @@ $(document).ready(function(){
 
 function startUp(){
     $("#counter").text("0");
+    newTarget();
 };
 
 //timer
-
-//score
 
 //point generator
 
@@ -73,16 +72,29 @@ let point=0;
 
 $("#target").click(function(){
     scoreGenerate();
-})
+    newTarget();
 
-function scoreGenerate(){
+    function scoreGenerate(){
 
-    point+=1;
-
-    $("#counter").text(point.toString());
-}
+        point+=1;
+    
+        $("#counter").text(point.toString());
+    }
+});
 
 //move target
+
+function newTarget(){
+    $("#target").click(function(){
+        let newX = Math.floor(Math.random() * 100)*10;
+        let newY = Math.floor(Math.random() * 100)*10;
+
+        $(this).css({
+            left: newX+"px",
+            top: newY+"px"
+        })
+    })
+};
 
 //upgrades
 
