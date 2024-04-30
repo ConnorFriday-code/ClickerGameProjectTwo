@@ -43,14 +43,46 @@ $(document).ready(function(){
         $("#play-button").text("Play!")
         $(".how-to-play-start").css("color","white") 
     });
-
+    
     $("#start-game").mouseleave(function(){
         $("#play-button").text("Play")
         $(".how-to-play-start").css("color","black")
     });
-
+    
     $("#start-game").click(function(event){
         $(".page-cover").hide("fast");
+        startUp();
     });
+
+
 })
+
+//start game
+
+function startUp(){
+    $("#counter").text("0");
+};
+
+//timer
+
+//score
+
+//point generator
+
+let point=0;
+
+$("#target").click(function(){
+    scoreGenerate();
+})
+
+function scoreGenerate(){
+
+    point+=1;
+
+    $("#counter").text(point.toString());
+}
+
+//move target
+
+//upgrades
 
