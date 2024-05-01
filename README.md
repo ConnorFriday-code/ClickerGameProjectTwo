@@ -102,6 +102,8 @@ Used in the planning and making of the website's wireframe.
 
 ## Testing
 
+### Bug Fixing
+
 ## Deployment
 
 ## Credits
