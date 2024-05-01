@@ -104,6 +104,26 @@ Used in the planning and making of the website's wireframe.
 
 ### Bug Fixing
 
+#### The issue: Target movement
+
+In my original thinking, I believed I could move the image randomly by changing css code for the image with the left and top positioning using jquery and .random(). However, this led to me encountering the bug of the game target not only leaving the game area, but also sometimes exceeding the width/height of the website.
+
+Target in game area:
+
+![Target in game area](readme-images/bug-images/clicker-quick-bug-1.PNG)
+
+Target leaving the game area:
+
+![Target leaving game area](readme-images/bug-images/clicker-quick-bug-2.PNG)
+
+Target leaving game area and stretching the page:
+
+![Target stretching webpage](readme-images/bug-images/clicker-quick-bug-3.PNG)
+
+#### The solution: width/height targetting
+
+I believe I can solve this issue by targetting the width and height of the game area using .width() and .height() then making sure the target's new postion does not exceed those numbers.
+
 ## Deployment
 
 ## Credits
