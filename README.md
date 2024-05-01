@@ -122,7 +122,7 @@ Target leaving game area and stretching the page:
 
 #### The solution: width/height targetting
 
-I believe I can solve this issue by targetting the width and height of the game area using .width() and .height() then making sure the target's new postion does not exceed those numbers.
+I believe I can solve this issue by targetting the width and height of the game area using .width() and .height() then making sure the target's new postion does not exceed those numbers. 
 
 ## Deployment
 
