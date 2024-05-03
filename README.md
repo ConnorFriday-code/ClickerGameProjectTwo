@@ -108,6 +108,9 @@ Used in the planning and making of the website's wireframe.
 
 In my original thinking, I believed I could move the image randomly by changing css code for the image with the left and top positioning using jquery and .random(). However, this led to me encountering the bug of the game target not only leaving the game area, but also sometimes exceeding the width/height of the website.
 
+Current code:
+![Script code](readme-images/bug-images/clicker-quick-bug-0.PNG)
+
 Target in game area:
 
 ![Target in game area](readme-images/bug-images/clicker-quick-bug-1.PNG)
@@ -123,6 +126,36 @@ Target leaving game area and stretching the page:
 #### The solution: width/height targetting
 
 I believe I can solve this issue by targetting the width and height of the game area using .width() and .height() then making sure the target's new postion does not exceed those numbers. 
+
+First step would be to save the game area's values of width() and height() to a couple of variables.
+
+![Adding code of grabbing the canvas' width and height](readme-images/bug-images/clicker-quick-bug-4.PNG)
+
+Then, seeing as .random() create a random number between 0 and 1, if I times it by the value I just created, then it should create a number that fits inside the game area's area even at the highest roll.
+
+![Changing the code from multiply by a hundred then by ten to instead just multiply the random function by the canvas' width/height](readme-images/bug-images/clicker-quick-bug-5.PNG)
+
+This worked incredibly well, with the target staying within the game area. Except it occasional would slightly leave the game area by the size of itself. What was clearly happening was a high roll number by the .random() (either in width or height) caused the target to be placed at the very edge of the canvas, with the 50px large image cuasing it to overflow and leave the game area.
+
+Target staying in game area (pc)
+
+![Target stays in game area on pc](readme-images/bug-images/clicker-quick-bug-6.PNG)
+
+Target staying in area (mobile)
+
+![Target stays in game area on mobile](readme-images/bug-images/clicker-quick-bug-7.PNG)
+
+Target just barely leaving leaving the game area
+
+![Target leaves the game area](readme-images/bug-images/clicker-quick-bug-8.PNG)
+
+The simpliest method I decided to deal with this would be to minus 50px (size of the target image in px)
+
+![Code change to minus 50](readme-images/bug-images/clicker-quick-bug-9.PNG)
+
+However this lead to the inverse happening, where a low roll by the random function would also cause the target to leave
+
+![Target leaves the game area again](readme-images/bug-images/clicker-quick-bug-10.PNG)
 
 ## Deployment
 
