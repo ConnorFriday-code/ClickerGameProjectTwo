@@ -76,6 +76,7 @@ $("#target").click(function(){
 
     function scoreGenerate(){
 
+        //Add point by 1 * upgrade multiplier
         point+=1;
     
         $("#counter").text(point.toString());
@@ -107,3 +108,42 @@ function newTarget(){
 
 //upgrades
 
+$("#upgrade-1").click(function(){
+    if(point>=9){
+        console.log("Enough points")
+    } else{
+        console.log("Not enough points")
+    }
+})
+
+$("#upgrade-2").click(function(){
+    if(point>=99){
+        console.log("Enough points")
+    } else{
+        console.log("Not enough points")
+    }
+})
+
+$("#upgrade-3").click(function(){
+    if(point>=999){
+        console.log("Enough points")
+    } else{
+        console.log("Not enough points")
+    }
+})
+
+$("#upgrade-4").click(function(){
+    if(point>=9999){
+        console.log("Enough points")
+    } else{
+        console.log("Not enough points")
+    }
+})
+
+$("#upgrade-5").click(function(){
+    if(point>=99999){
+        console.log("Enough points")
+    } else{
+        console.log("Not enough points")
+    }
+})
