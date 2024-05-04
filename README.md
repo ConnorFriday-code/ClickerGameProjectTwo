@@ -157,6 +157,14 @@ However this lead to the inverse happening, where a low roll by the random funct
 
 ![Target leaves the game area again](readme-images/bug-images/clicker-quick-bug-10.PNG)
 
+This caused me to remove the +/-50 from the newX/newY variables entirely, and instead move it to the variables gameAreaWidth and gameAreaHeight. I believed that this would solve the problem by reducing the max height and width that would multiply the random later.
+
+![Minus 50 moved to gameAreawidth/height](readme-images/bug-images/clicker-quick-bug-11.PNG)
+
+This has worked in fixing the overlap bug.
+
+![In a hundred clicks the target has not left the game area](readme-images/bug-images/clicker-quick-bug-12.PNG)
+
 ## Deployment
 
 ## Credits

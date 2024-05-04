@@ -89,13 +89,13 @@ function newTarget(){
     $("#target").click(function(){
 
         //Grab the height and width of the game area and store them to two let variables
-        let gameAreaWidth = $("#canvas").width();
-        let gameAreaHeight = $("#canvas").height();
-
+        let gameAreaWidth = $("#canvas").width()-50;
+        let gameAreaHeight = $("#canvas").height()-50;
 
         //Make a random number to serve as new left and top * size of canvas
-        let newX = Math.floor(Math.random() * gameAreaWidth-50);
-        let newY = Math.floor(Math.random() * gameAreaHeight-50);
+        let newX = Math.floor(Math.random() * gameAreaWidth);
+        let newY = Math.floor(Math.random() * gameAreaHeight);
+        
 
         //Targetting the target, edit the css to alter the styling of left and top to new numbers+px
         $(this).css({
