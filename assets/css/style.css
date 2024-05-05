@@ -16,6 +16,10 @@ body{
     background-color: #9b9b9b;
 }
 
+.bg-red{
+    background-color: #fc2f2f;
+}
+
 .center{
     text-align: center;
 }
@@ -142,7 +146,6 @@ header{
     margin: 5px auto;
     width: 15%;
     padding: 5px;
-    background-color: #f7f72e;
     font-size: 24px;
 }
 

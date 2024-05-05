@@ -57,16 +57,16 @@ $(document).ready(function(){
 
 })
 
-//start game
+//Start game
 
 function startUp(){
     $("#counter").text("0");
     newTarget();
 };
 
-//timer
+//Timer
 
-//point generator
+//Point generator
 
 let point=0;
 
@@ -76,14 +76,22 @@ $("#target").click(function(){
 
     function scoreGenerate(){
 
-        //Add point by 1 * upgrade multiplier
-        point+=1;
+        //If there are no upgrades, increase score by 1. If upgrades have been brought, increase score by 1 x the multiplier instead.
+        //This is to solve the problem of 1 x 0 at the start of the game, or using addition of 1+0 also meaning 1+10, leading to score increases by 11 or 101.
+        if(upgradeMultiplier===0){
+            //Add point by 1
+            point+=1;
+        }else{
+            //Add point by 1 * upgrade multiplier
+            point+=1*upgradeMultiplier;
+        }
+
     
         $("#counter").text(point.toString());
     }
 });
 
-//move target
+//Move target
 
 function newTarget(){
     //On target being click, run...
@@ -106,44 +114,113 @@ function newTarget(){
     })
 };
 
-//upgrades
+//Upgrades
+
+let upgradeMultiplier = 0
 
 $("#upgrade-1").click(function(){
     if(point>=9){
-        console.log("Enough points")
+        //Minus 9 points
+        point -=9;
+
+        //Update score to show deducted points
+        $("#counter").text(point.toString());
+
+        //Add 10 to score multiplier
+        upgradeMultiplier +=10;
     } else{
-        console.log("Not enough points")
+        //Make the background turn red
+        $("#upgrade-1").removeClass("bg-yellow").addClass("bg-red")
+
+        //After half a second, return back to yellow
+        setTimeout(function() {
+            $("#upgrade-1").removeClass("bg-red").addClass("bg-yellow");
+        }, 500);
     }
 })
 
 $("#upgrade-2").click(function(){
     if(point>=99){
-        console.log("Enough points")
+        //Minus 99 points
+        point -=99;
+
+        //Update score to show deducted points
+        $("#counter").text(point.toString());
+
+        //Add 20 to score multiplier
+        upgradeMultiplier +=20;
     } else{
-        console.log("Not enough points")
+        //Make the background turn red
+        $("#upgrade-2").removeClass("bg-yellow").addClass("bg-red")
+
+        //After half a second, return back to yellow
+        setTimeout(function() {
+            $("#upgrade-2").removeClass("bg-red").addClass("bg-yellow");
+        }, 500);
     }
 })
 
 $("#upgrade-3").click(function(){
     if(point>=999){
-        console.log("Enough points")
+        //Minus 999 points
+        point -=999;
+
+        //Update score to show deducted points
+        $("#counter").text(point.toString());
+
+        //Add 50 to score multiplier
+        upgradeMultiplier +=50;
     } else{
-        console.log("Not enough points")
+        //Make the background turn red
+        $("#upgrade-3").removeClass("bg-yellow").addClass("bg-red")
+
+        //After half a second, return back to yellow
+        setTimeout(function() {
+            $("#upgrade-3").removeClass("bg-red").addClass("bg-yellow");
+        }, 500);
     }
 })
 
 $("#upgrade-4").click(function(){
     if(point>=9999){
-        console.log("Enough points")
+    //Minus 9999 points
+    point -=9999;
+
+    //Update score to show deducted points
+    $("#counter").text(point.toString());
+        
+    //Add 100 to score multiplier
+    upgradeMultiplier +=100;
     } else{
-        console.log("Not enough points")
+        //Make the background turn red
+        $("#upgrade-4").removeClass("bg-yellow").addClass("bg-red")
+
+        //After half a second, return back to yellow
+        setTimeout(function() {
+            $("#upgrade-4").removeClass("bg-red").addClass("bg-yellow");
+        }, 500);
     }
 })
 
 $("#upgrade-5").click(function(){
     if(point>=99999){
-        console.log("Enough points")
+        //Minus 99999 points
+        point -=99999;
+
+        //Update score to show deducted points
+        $("#counter").text(point.toString());
+
+        //Add 1000 to score multiplier
+        upgradeMultiplier +=1000;
     } else{
-        console.log("Not enough points")
+        //Make the background turn red
+        $("#upgrade-5").removeClass("bg-yellow").addClass("bg-red")
+
+        //After half a second, return back to yellow
+        setTimeout(function() {
+            $("#upgrade-5").removeClass("bg-red").addClass("bg-yellow");
+        }, 500);
     }
 })
+
+//Game Over
