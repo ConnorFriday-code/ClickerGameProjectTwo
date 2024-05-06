@@ -71,9 +71,12 @@ function startUp(){
 
 //Timer
 
-//Red div slides across over 5 seconds
+//Red div slides across over 3 seconds
+//When width reaches 100%, the function will activate which will trigger the game over function
 function timer(){
-    $("#red").animate({width:"100%"},3000);
+    $("#red").animate({width:"100%"},3000, function() {
+        gameOver();
+    });
 }
 
 //Stop red div from expanding, set width back to 0, then start timer function again.
@@ -251,3 +254,7 @@ $("#upgrade-5").click(function(){
 })
 
 //Game Over
+
+function gameOver(){
+    console.log("Game Over");
+}
