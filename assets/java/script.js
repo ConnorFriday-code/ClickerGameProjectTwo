@@ -54,6 +54,11 @@ $(document).ready(function(){
         startUp();
     });
 
+    //Start timer function when user selects start game
+    $("#start-game").click(function(){
+        timer()
+    })
+
 
 })
 
@@ -65,6 +70,17 @@ function startUp(){
 };
 
 //Timer
+
+//Red div slides across over 5 seconds
+function timer(){
+    $("#red").animate({width:"100%"},3000);
+}
+
+//Stop red div from expanding, set width back to 0, then start timer function again.
+function targetClicked(){
+    $("#red").stop().css("width","0%");
+    timer();
+}
 
 //Point generator
 
@@ -89,6 +105,8 @@ $("#target").click(function(){
     
         $("#counter").text(point.toString());
     }
+
+    targetClicked();
 });
 
 //Move target
@@ -115,6 +133,15 @@ function newTarget(){
 };
 
 //Upgrades
+
+$(".upgrade-card").mouseenter(function(){
+    $(this).css("border", "3px #fff solid")
+})
+
+$(".upgrade-card").mouseleave(function(){
+    $(this).css("border", "3px #000 solid")
+})
+
 
 let upgradeMultiplier = 0
 
