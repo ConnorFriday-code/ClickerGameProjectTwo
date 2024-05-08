@@ -211,6 +211,25 @@ footer{
     font-size: 32px;
 }
 
+/*------------------------------------------------------------ game over*/
+
+#game-over-outer-box{
+    width: 50%;
+    max-height: 90%;
+    background-color: #6b85a3;
+    margin: 20px auto;
+    z-index: 21;
+    padding: 5px 10px;
+    overflow: auto;
+}
+
+#game-over-title{
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    color: #fff;
+}
+
 /*------------------------------------------------------------ @media (mobile/small)*/
 
 @media only screen and (max-width: 600px){

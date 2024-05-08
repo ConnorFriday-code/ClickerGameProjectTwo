@@ -256,5 +256,11 @@ $("#upgrade-5").click(function(){
 //Game Over
 
 function gameOver(){
-    console.log("Game Over");
+    $("#game-over-div").addClass("page-cover border");
+    let gameOverInnerDiv = $(`
+    <div id="game-over-outer-box" class="border">
+        <h2 id="game-over-title" class="bg-red center oswald border">Game Over!</h2>
+        <p>${point}</p>
+    </div>`);
+    $("#game-over-div").append(gameOverInnerDiv);
 }
