@@ -50,14 +50,14 @@ $(document).ready(function(){
     });
     
     $("#start-game").click(function(event){
-        $(".page-cover").hide("fast");
+        $(".page-cover").css("visibility","hidden");
         startUp();
     });
 
     //Start timer function when user selects start game
     $("#start-game").click(function(){
-        timer()
-    })
+        timer();
+    });
 
 
 })
@@ -256,11 +256,31 @@ $("#upgrade-5").click(function(){
 //Game Over
 
 function gameOver(){
+    $("#game-over-div").css("visibility","visible")
     $("#game-over-div").addClass("page-cover border");
     let gameOverInnerDiv = $(`
     <div id="game-over-outer-box" class="border">
         <h2 id="game-over-title" class="bg-red center oswald border">Game Over!</h2>
-        <p>${point}</p>
+        <div>
+            <p>The time ran out</p>
+            <p>You scored:</p>
+            <div id="final-score">
+                <p>${point}</p>
+            </div>
+        </div>
+        <div id="restart-button">
+            <p>Try Again!</p>
+        </div>
     </div>`);
-    $("#game-over-div").append(gameOverInnerDiv);
+    $("#game-over-div").html(gameOverInnerDiv);
+    $("#restart-button").click(function(event){
+        $(".page-cover").css("visibility","hidden");
+        startUp();
+    });
+
+    //Start timer function when user selects start game
+    $("#restart-button").click(function(){
+        targetClicked()
+        timer();
+    });
 }
