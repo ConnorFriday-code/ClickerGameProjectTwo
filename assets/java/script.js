@@ -74,7 +74,7 @@ function startUp(){
 //Red div slides across over 3 seconds
 //When width reaches 100%, the function will activate which will trigger the game over function
 function timer(){
-    $("#red").animate({width:"100%"},3000, function() {
+    $("#red").stop().animate({width:"100%"},3000, function() {
         gameOver();
     });
 }
@@ -280,7 +280,9 @@ function gameOver(){
 
     //Start timer function when user selects start game
     $("#restart-button").click(function(){
-        targetClicked()
+        upgradeMultiplier = 0;
+        point=0;
+        targetClicked();
         timer();
     });
 }
