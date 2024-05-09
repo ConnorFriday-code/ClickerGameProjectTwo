@@ -261,15 +261,21 @@ function gameOver(){
     let gameOverInnerDiv = $(`
     <div id="game-over-outer-box" class="border">
         <h2 id="game-over-title" class="bg-red center oswald border">Game Over!</h2>
-        <div>
-            <p>The time ran out</p>
-            <p>You scored:</p>
-            <div id="final-score">
-                <p>${point}</p>
+        <div class="bg-grey border">
+            <p class="center">The time ran out</p>
+            <p class="center">You scored:</p>
+            <div id="final-score-box">
+                <p id="final-score" class="center bg-yellow border">${point}</p>
+            </div>
+            <p class="center">We hope you had fun!<br>Maybe check out our social media below:</p>
+            <div class="center">
+                <a>Facebook</a>
+                <a>Twister</a>
+                <a>Instagram</a>
             </div>
         </div>
         <div id="restart-button">
-            <p>Try Again!</p>
+            <p id="restart--button-text" class="center bg-yellow border">Try Again!</p>
         </div>
     </div>`);
     $("#game-over-div").html(gameOverInnerDiv);
