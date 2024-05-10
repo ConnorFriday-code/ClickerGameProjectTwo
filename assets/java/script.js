@@ -40,13 +40,11 @@ $(document).ready(function(){
     $(".instructions-outer-box").append(startGame);
 
     $("#start-game").mouseenter(function(){
-        $("#play-button").text("Play!")
-        $(".how-to-play-start").css("color","white") 
+        $(this).css("border", "3px #fff solid"); 
     });
     
     $("#start-game").mouseleave(function(){
-        $("#play-button").text("Play")
-        $(".how-to-play-start").css("color","black")
+        $(this).css("border", "3px #000 solid");
     });
     
     $("#start-game").click(function(event){
@@ -263,19 +261,21 @@ function gameOver(){
         <h2 id="game-over-title" class="bg-red center oswald border">Game Over!</h2>
         <div class="bg-grey border">
             <p class="center">The time ran out</p>
-            <p class="center">You scored:</p>
+            <p id="you-scored" class="center">You scored:</p>
             <div id="final-score-box">
                 <p id="final-score" class="center bg-yellow border">${point}</p>
             </div>
             <p class="center">We hope you had fun!<br>Maybe check out our social media below:</p>
             <div class="center">
-                <a>Facebook</a>
-                <a>Twister</a>
-                <a>Instagram</a>
+                <ul id="game-over-list" class="center">
+                    <li><a href="https://en-gb.facebook.com/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
             </div>
         </div>
         <div id="restart-button">
-            <p id="restart--button-text" class="center bg-yellow border">Try Again!</p>
+            <p id="restart-button-text" class="center bg-yellow border">Try Again?</p>
         </div>
     </div>`);
     $("#game-over-div").html(gameOverInnerDiv);
@@ -291,4 +291,12 @@ function gameOver(){
         targetClicked();
         timer();
     });
-}
+
+    $("#restart-button-text").mouseenter(function(){
+        $(this).css("border", "3px #fff solid");
+    });
+    
+    $("#restart-button-text").mouseleave(function(){
+        $(this).css("border", "3px #000 solid");
+    });
+};

@@ -13,7 +13,7 @@ body{
 }
 
 .bg-grey{
-    background-color: #9b9b9b;
+    background-color: #bcbcbc;
 }
 
 .bg-red{
@@ -184,7 +184,7 @@ footer{
 }
 
 .instructions-outer-box{
-    width: 50%;
+    width: 60%;
     max-height: 90%;
     background-color: #6b85a3;
     margin: 20px auto;
@@ -195,8 +195,9 @@ footer{
 
 .how-to-play-title{
     width: 80%;
-    height: 80px;
     margin: 0 auto;
+    font-size: 36px;
+    padding: 5px;
 }
 
 .how-to-play-desc{
@@ -214,7 +215,7 @@ footer{
 /*------------------------------------------------------------ game over*/
 
 #game-over-outer-box{
-    width: 50%;
+    width: 60%;
     max-height: 90%;
     background-color: #6b85a3;
     margin: 20px auto;
@@ -226,8 +227,15 @@ footer{
 #game-over-title{
     width: 80%;
     height: 80px;
-    margin: 0 auto;
+    margin: 10px auto;
     color: #fff;
+    font-size: 36px;
+    padding-top: 20px;
+}
+
+#you-scored{
+    font-size: 24px;
+    margin-bottom: 0;
 }
 
 #final-score-box{
@@ -238,9 +246,23 @@ footer{
 #final-score{
     padding: 10px;
     font-size: 32px;
+    margin: 10px auto;
 }
 
-#restart--button-text{
+#restart-button-text{
+    padding: 10px;
+    font-size: 32px;
+    margin: 10px auto;
+}
+
+#game-over-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#game-over-list > li{
     padding: 10px;
     font-size: 32px;
 }
