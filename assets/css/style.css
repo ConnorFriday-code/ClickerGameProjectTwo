@@ -40,6 +40,12 @@ body{
     border: 3px #000 solid;
 }
 
+.no-select{
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 
 /*------------------------------------------------------------ Title-area*/
 
