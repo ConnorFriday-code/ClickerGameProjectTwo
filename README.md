@@ -102,6 +102,12 @@ Used in the planning and making of the website's wireframe.
 
 ## Testing
 
+### BBD vs TDD
+
+#### Differences between BBD and TDD
+
+#### Why I chose BBD testing
+
 ### Bug Fixing
 
 #### The issue: Target movement
@@ -171,10 +177,24 @@ This has worked in fixing the overlap bug.
 
 ### Code
 
+*[W3Schools](https://www.w3schools.com/)
+
+Used to learn about [animate method](https://www.w3schools.com/jquery/eff_animate.asp) for the timer div in jquery.
+
+Used to learn about [user select](https://www.w3schools.com/howto/howto_css_disable_text_selection.asp) to disable selection for the upgrade cards.
+
 ### Media/Content
 
  * [Balsamiq](https://balsamiq.cloud)
 
 Used in the planning and making of the website's wireframe.
+
+* [Font Awesome](https://fontawesome.com/v4/icons/)
+
+Used in the logos of the social media links.
+
+* [Google Fonts](https://fonts.google.com/)
+
+Used in title elements using thw Oswald family of fonts.
 
 ### Thanks
