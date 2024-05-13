@@ -108,6 +108,8 @@ Used in the planning and making of the website's wireframe.
 
 #### Why I chose BBD testing
 
+### Validators
+
 ### Bug Fixing
 
 #### The issue: Target movement
@@ -172,6 +174,10 @@ This has worked in fixing the overlap bug.
 ![In a hundred clicks the target has not left the game area](readme-images/bug-images/clicker-quick-bug-12.PNG)
 
 ## Deployment
+
+### User goals
+
+### GitHub
 
 ## Credits
 
