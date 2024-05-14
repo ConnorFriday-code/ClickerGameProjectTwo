@@ -16,63 +16,79 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 <body>
-
+    <!-- Unfilled divs for js to target and fill -->
     <section id="covers">
+        <!-- To be filled with instructions on how to play by js -->
         <div id="instructions-outer-div"></div>
+        <!-- To be filled with game-over content by js -->
         <div id="game-over-div"></div>
     </section>
 
     <!-- Section for game title -->
     <section id="head-area">
+        <!-- Game title -->
         <header class="border">
             <div id="title" class="bg-yellow center uppercase oswald">
                 <h1><a href="index.html" aria-label="The website's header that links to the same page to refresh it">Clicker-Quick</a></h1>
             </div>
         </header>
     </section>
+    <!-- Section for score area and timer -->
     <section id="score-area">
+        <!-- Score counter -->
         <div id="score-counter">
             <h2 class="center border">Score:<span id="counter">0</span></h2>
         </div>
+        <!-- Timer bar -->
         <div id="score-timer">
+            <!-- Green part for timer -->
             <div id="timer" class="border">
+                <!-- Red part for timer -->
                 <div id="red"></div>
             </div>
         </div>
     </section>
     <section id="game-area">
+        <!-- Grey background game zone -->
         <div id="canvas" class="border bg-grey">
             <div id="target-div">
+                <!-- Target img -->
                 <img src="assets/images/target.jpg" alt="target" id="target">
             </div>
         </div>
     </section>
     <section id="upgrades-area">
+        <!-- Upgrade row -->
         <div id="upgrade-bar">
+            <!-- Upgrade 1 -->
             <div id="upgrade-1" class="upgrade-card border center bg-yellow">
                 <p class="no-select">Upgrade 1</p>
                 <p id="multiplier-1" class="bold no-select">x10</p>
                 <p class="no-select">Cost:</p>
                 <p id="cost-1" class="bold no-select">9</p>
             </div>
+            <!-- Upgrade 2 -->
             <div id="upgrade-2" class="upgrade-card border center bg-yellow">
                 <p class="no-select">Upgrade 2</p>
                 <p id="multiplier-2" class="bold no-select">x20</p>
                 <p class="no-select">Cost:</p>
                 <p id="cost-2" class="bold no-select">99</p>
             </div>
+            <!-- Upgrade 3 -->
             <div id="upgrade-3" class="upgrade-card border center bg-yellow">
                 <p class="no-select">Upgrade 3</p>
                 <p id="multiplier-3" class="bold no-select">x50</p>
                 <p class="no-select">Cost:</p>
                 <p id="cost-3" class="bold no-select">999</p>
             </div>
+            <!-- Upgrade 4 -->
             <div id="upgrade-4" class="upgrade-card border center bg-yellow">
                 <p class="no-select">Upgrade 4</p>
                 <p id="multiplier-4" class="bold no-select">x100</p>
                 <p class="no-select">Cost:</p>
                 <p id="cost-4" class="bold no-select">9999</p>
             </div>
+            <!-- Upgrade 5 -->
             <div id="upgrade-5" class="upgrade-card border center bg-yellow">
                 <p class="no-select">Upgrade 5</p>
                 <p id="multiplier-5" class="bold no-select">x1000</p>
@@ -80,24 +96,30 @@
                 <p id="cost-5" class="bold no-select">99999</p>
             </div>
         </div>
-
     </section>
+
+    <!-- Footer -->
     <section id="footer-area">
         <footer class="border">
+            <!-- Left/top side for copyrights (position depends on screen size) -->
             <div id="Copyrights">
                 <P>Code and target image belong to me: Connor</P>
+                <!-- Links to websites where the specified rights belongs to -->
                 <p>Soical media icons rights belong to <a href="https://fontawesome.com/v4/" target="_blank">Font Awesome &#169;</a></p>
-                <p>Font styling rights belong to <a href="https://fonts.google.com/">Google Fonts</a></p>
+                <p>Font styling rights belong to <a href="https://fonts.google.com/" target="_blank">Google Fonts</a></p>
             </div>
+            <!-- Right/bottom side for social media (position depends on screen size) -->
             <div id="social-media-bottom">
                 <p>Please, check out our other social media!:</p>
                 <ul>
+                    <!-- Basic links to social media sites (login due to social media not existing) -->
                     <li><a href="https://en-gb.facebook.com/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
                     <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                     <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </footer>
+    <!-- JS links -->
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/java/script.js"></script>
