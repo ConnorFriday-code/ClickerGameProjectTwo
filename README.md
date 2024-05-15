@@ -92,21 +92,123 @@ Lastily, the welcome/instructions and the game over divs. The instructions secti
 
 ### Existing features
 
+#### Instructions
+
+* The instructions need to load
+
+#### Headers
+
+Main h1 header:
+
+* Bold, clear, and easy to read
+
+* Uses h1 element, giving it an extra boost in search results
+
+* Very short and not flashy, won't drag the user's attention away from game
+
+![Image of main header](readme-images/features-images/header-1.PNG)
+
+Instructions h2 header:
+
+* Bold, clear, and easy to read
+
+* Shares colours and styling with h1 header to create a common theme
+
+![Image of main header](readme-images/features-images/header-2.PNG)
+
+Game over h2:
+
+* Bold, clear, and easy to read
+
+* Large amount of read is very catching and creates a negative colour message
+
+![Image of main header](readme-images/features-images/header-3.PNG)
+
+#### Score
+
+* The game needs to give and track score
+
+#### Timer
+
+* The timer needs to work and end the game when it runs out
+
+* Timer can be fancy graphics
+
+#### Game area
+
+* The game needs to load
+
+* The game needs to work as intended without any major bugs
+
+* The target will move after every click
+
+#### Upgrades
+
+* Possible upgrades, spending score to earn more score
+
+#### Footer
+
+#### Game over
+
+* The game needs to reset the score after a game over
+
+* The game needs to present final score at the game over
+
 ### Features to be added
+
+* A sound effect (possibly an api) will play on every target click
+
+* Change both h2 headers of how to play and game over to be the same size
+
+* Logo, favicon
 
 ## Technology Used
 
- * [Balsamiq](https://balsamiq.cloud)
+### Languages
+
+Html5
+
+CSS3
+
+JavaScript
+
+### Frameworks, libraries, and programs used
+
+* [Balsamiq](https://balsamiq.cloud)
 
 Used in the planning and making of the website's wireframe.
+
+* [jQuery](https://jquery.com/)
+
+For the interactive elements covering the entire website.
+
+* [Git](https://git-scm.com/)
+
+Used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
+
+* [Github](https://github.com/)
+
+Used to store the project's code.
 
 ## Testing
 
 ### BBD vs TDD
 
-#### Differences between BBD and TDD
+#### Differences between BDD and TDD
 
-#### Why I chose BBD testing
+The main difference between BDD (Behaviour Driven Development) and TDD (Test Driven Development) is that BDD is about tests being done manually while TDD is about test being checked automatically by the computer. TDD is written before the software and improved to meet updated goals, the cycle repeating over and over until the product is finished and passes all tests. BDD is tested as the code is written against the user stories, with the user manually checking changes on different media and screensizes until completion. BDD tests can cause the program to end up feeling more intuative and requires no software, leading it to be simpliar for a developer. Meanwhile, TDD can test extreme conditions and more conditons at a very fast rate, causing the program to end up being more stable.
+
+#### Why I chose BDD testing
+
+I chose the BDD testing method for the following reasons:
+
+* Time
+
+Due to the limited timeframe inwhich I had to make the project, TTD style development would take too long and would likely cause me to miss my dealine. As such, to ensure project completion, I opted against TDD testing.
+
+* Intuitiveness
+
+The website/game requires constant user interaction in a short amount of time, as such, I made the user the largest focus in this project. BDD natuarally leads to greater user intuitiveness, leading it to be the better option compared to TDD.
 
 ### Validators
 
