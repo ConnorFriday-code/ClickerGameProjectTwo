@@ -56,15 +56,15 @@ Features that can be added if time is available
 
 #### Phone Wireframe:
 
-![Phone Wireframe Balsamiq](https://share.balsamiq.com/c/rJjbfQYprzGwqrXFBgQ3Bo.png)
+![Phone Wireframe Balsamiq](readme-images/wireframes/clicker-wireframe-1.png)
 
 #### Tablet Wireframe:
 
-![Phone Wireframe Balsamiq](https://share.balsamiq.com/c/nX1DeTCt7okU96tqXCbnJA.png)
+![Phone Wireframe Balsamiq](readme-images/wireframes/clicker-wireframe-2.png)
 
 #### Computer Wireframe:
 
-![Phone Wireframe Balsamiq](https://share.balsamiq.com/c/n7ELZUf8zZud21L3UMfzXV.png)
+![Phone Wireframe Balsamiq](readme-images/wireframes/clicker-wireframe-3.png)
 
 ### Design choices
 
@@ -114,7 +114,7 @@ Instructions h2 header:
 
 * Shares colours and styling with h1 header to create a common theme
 
-![Image of main header](readme-images/features-images/header-2.PNG)
+![Image of instructions header](readme-images/features-images/header-2.PNG)
 
 Game over h2:
 
@@ -122,37 +122,57 @@ Game over h2:
 
 * Large amount of read is very catching and creates a negative colour message
 
-![Image of main header](readme-images/features-images/header-3.PNG)
+![Image of game-over header](readme-images/features-images/header-3.PNG)
 
 #### Score
 
-* The game needs to give and track score
+* Block of solid white makes it extra bold, with black text making it easy to read
+
+* The game tracks score as it increases and decreases, changing to user's input
 
 #### Timer
 
-* The timer needs to work and end the game when it runs out
+* The timer works in counting down and restarting, reacting to user interaction
 
-* Timer can be fancy graphics
+* Timer has fancy, animated graphics that stands out from the rest of website
+
+* The timer is bold and easy to read
 
 #### Game area
 
-* The game needs to load
+* The game loads and moves on the target bveing clicked, reacting to user's interaction
 
-* The game needs to work as intended without any major bugs
+* The target does not leave the game area
 
-* The target will move after every click
+* Dull background prevents eyestrain
+
+* Bright target makes it easy to read and spot, important for the game
 
 #### Upgrades
 
-* Possible upgrades, spending score to earn more score
+* Border changes colour when hovered over, reacting to user interaction
+
+* Changes score multiplier on a upgrade being purchased, reacting to user interaction
+
+* Chnages background to red if user doesn't have enough score to purchase an upgrade, reacting to user interaction
 
 #### Footer
 
+* Contains copyrights
+
+* Contains social media backup links
+
+* Simple and not very eye catching to prevent dragging attention away from game
+
 #### Game over
 
-* The game needs to reset the score after a game over
+* On a new game, the score and score multiplier are reset back to zero
 
-* The game needs to present final score at the game over
+* The game presents the final score at the game over
+
+* Links to social media
+
+* Stops target from being clicked while up
 
 ### Features to be added
 
@@ -160,7 +180,7 @@ Game over h2:
 
 * Change both h2 headers of how to play and game over to be the same size
 
-* Logo, favicon
+* Add a logo/favicon
 
 ## Technology Used
 
@@ -209,6 +229,16 @@ Due to the limited timeframe inwhich I had to make the project, TTD style develo
 * Intuitiveness
 
 The website/game requires constant user interaction in a short amount of time, as such, I made the user the largest focus in this project. BDD natuarally leads to greater user intuitiveness, leading it to be the better option compared to TDD.
+
+#### BDD example with clicker quick
+
+When I, a user, enter the webpage, I want to be:
+
+* Greeted with the instructions
+* For the instructions to be clear and readable on any device
+* I want to be able to start the game by pressing the 'start game' button
+
+### Testing user goals
 
 ### Validators
 
@@ -276,8 +306,6 @@ This has worked in fixing the overlap bug.
 ![In a hundred clicks the target has not left the game area](readme-images/bug-images/clicker-quick-bug-12.PNG)
 
 ## Deployment
-
-### User goals
 
 ### GitHub
 
