@@ -94,7 +94,11 @@ Lastily, the welcome/instructions and the game over divs. The instructions secti
 
 #### Instructions
 
-* The instructions need to load
+* The instructions load on document load
+
+* Hovering on 'start game' button changes border colour, responding to user interavtivity
+
+* Scrollable when its length exceeds document height
 
 #### Headers
 
@@ -120,7 +124,7 @@ Game over h2:
 
 * Bold, clear, and easy to read
 
-* Large amount of read is very catching and creates a negative colour message
+* Large amount of read is very eye catching and creates a negative colour message
 
 ![Image of game-over header](readme-images/features-images/header-3.PNG)
 
@@ -173,6 +177,8 @@ Game over h2:
 * Links to social media
 
 * Stops target from being clicked while up
+
+* Restart button changes border colour when hovered over, responding to user interactivity
 
 ### Features to be added
 
@@ -240,7 +246,51 @@ When I, a user, enter the webpage, I want to be:
 
 ### Testing user goals
 
-### Validators
+Using the user goals stated at the start, I can use BDD testing to check if I have achieved the goals:
+
+#### First time users
+
+* To be able to quickly understand how to play the game
+
+- Upon entering the website I am introduced to the instructions
+
+- The instructions are easy to read and understand
+
+[Instructions on document load]()
+
+* To be able to start playing the game with no confusion/hassle
+
+- Instructions are clear to understand
+
+- Little clatter and clear, bold lines and colours prevents the game from becoming muddled
+
+[Image of game area with little to no clutter]()
+
+* For the game to run smoothly
+
+- There is no noticable lag, delay, or other disturbing occurances while playing
+
+[Image of lighthouse loading times]()
+
+#### Returning user
+
+* To be able to quickly get into a game
+
+- Page is very quick to load
+
+- One click is all that is needed to start playing
+
+- On game over, once click is all that is needed to try again
+
+[Image of start game button]()
+
+[Image of restart button]()
+
+* For the score to be obvious and easy to read to compare attempts
+
+- Bold colour choice and clear seperation from other elements makes score easy to read
+
+[Image of score with nothing around it]()
 
 ### Bug Fixing
 
@@ -305,9 +355,29 @@ This has worked in fixing the overlap bug.
 
 ![In a hundred clicks the target has not left the game area](readme-images/bug-images/clicker-quick-bug-12.PNG)
 
+### Validators
+
+#### HTML
+
+#### CSS
+
+#### JS
+
+#### Lighthouse
+
 ## Deployment
 
 ### GitHub
+
+Git
+
+The site was deployed to GitHub pages through the steps as follows:
+
+1. In the GitHub repository is the settings tab
+2. In the new page there will be a menu on the left with one option being 'Pages'
+3. Within this I selected the branch to be 'Main', and refreshing the page a minute later it had updated with a ribbon display to indicate success
+
+The live link can be found here: [Live Project Link]()
 
 ## Credits
 
@@ -333,4 +403,6 @@ Used in the logos of the social media links.
 
 Used in title elements using thw Oswald family of fonts.
 
-### Thanks
+### Thanks/Acknowledgements
+
+Code Institute for teaching me the knowledge of web development and providing a library of resources to return to for help
