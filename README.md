@@ -359,13 +359,27 @@ This has worked in fixing the overlap bug.
 
 #### HTML
 
+Using W3C validator:
+
+[Jigsaw report here]()
+
 #### CSS
+
+Using jigsaw:
+
+[Jigsaw report here]()
 
 #### JS
 
 [Script](https://jshint.com/)
 
 #### Lighthouse
+
+[Link to lighthouse](https://pagespeed.web.dev/analysis/https-connorfriday-code-github-io-ClickerGameProjectTwo-index-html/goabrpinbb?form_factor=desktop)
+
+![Lighthouse report for mobile: performance 93%](readme-images/validation/clicker-lighthouse-mobile.PNG)
+
+![Lighthouse report for desktop: performance 100%](readme-images/validation/clicker-lighthouse-desktop.PNG)
 
 ## Deployment
 
@@ -379,7 +393,7 @@ The site was deployed to GitHub pages through the steps as follows:
 2. In the new page there will be a menu on the left with one option being 'Pages'
 3. Within this I selected the branch to be 'Main', and refreshing the page a minute later it had updated with a ribbon display to indicate success
 
-The live link can be found here: [Live Project Link]()
+The live link can be found here: [Live Project Link](https://connorfriday-code.github.io/ClickerGameProjectTwo/)
 
 ## Credits
 
