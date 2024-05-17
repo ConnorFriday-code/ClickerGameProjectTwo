@@ -244,9 +244,9 @@ When I, a user, enter the webpage, I want to be:
 * For the instructions to be clear and readable on any device
 * I want to be able to start the game by pressing the 'start game' button
 
-### Testing user goals
+### Testing user goals using BDD
 
-Using the user goals stated at the start, I can use BDD testing to check if I have achieved the goals:
+Using the user goals stated at the start of the README, I can use BDD testing to check if I have achieved the goals:
 
 #### First time users
 
@@ -254,9 +254,9 @@ Using the user goals stated at the start, I can use BDD testing to check if I ha
 
 - Upon entering the website I am introduced to the instructions
 
-- The instructions are easy to read and understand
+- The instructions are easy to read and understand on any device
 
-[Instructions on document load]()
+![Instructions on document load](readme-images/testing-user-goals-images/clicker-instructions.png)
 
 * To be able to start playing the game with no confusion/hassle
 
@@ -264,13 +264,13 @@ Using the user goals stated at the start, I can use BDD testing to check if I ha
 
 - Little clatter and clear, bold lines and colours prevents the game from becoming muddled
 
-[Image of game area with little to no clutter]()
+![Image of game area with little to no clutter](readme-images/testing-user-goals-images/clicker-game-area.png)
 
 * For the game to run smoothly
 
 - There is no noticable lag, delay, or other disturbing occurances while playing
 
-[Image of lighthouse loading times]()
+![Image of lighthouse loading times]()
 
 #### Returning user
 
@@ -282,15 +282,15 @@ Using the user goals stated at the start, I can use BDD testing to check if I ha
 
 - On game over, once click is all that is needed to try again
 
-[Image of start game button]()
+![Image of start game button](readme-images/testing-user-goals-images/clicker-start-button.png)
 
-[Image of restart button]()
+![Image of restart button](readme-images/testing-user-goals-images/clicker-restart-button.png)
 
 * For the score to be obvious and easy to read to compare attempts
 
 - Bold colour choice and clear seperation from other elements makes score easy to read
 
-[Image of score with nothing around it]()
+![Image of score with nothing around it](readme-images/testing-user-goals-images/clicker-score-box.png)
 
 ### Bug Fixing
 
@@ -355,13 +355,15 @@ This has worked in fixing the overlap bug.
 
 ![In a hundred clicks the target has not left the game area](readme-images/bug-images/clicker-quick-bug-12.PNG)
 
-### Validators
+### Validator testing
 
 #### HTML
 
 #### CSS
 
 #### JS
+
+[Script](https://jshint.com/)
 
 #### Lighthouse
 

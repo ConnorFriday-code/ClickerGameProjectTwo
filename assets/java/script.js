@@ -1,6 +1,6 @@
 $(document).ready(function(){
     //Add class to make hidden, unfilled div into a page covering div
-    $("#instructions-outer-div").addClass("page-cover border")
+    $("#instructions-outer-div").addClass("page-cover border");
 
     //Creat a variable that stores a div element with two classes
     let innerInstructions = $("<div></div>").addClass("instructions-outer-box border");
@@ -47,9 +47,9 @@ $(document).ready(function(){
 
     //On mouse entering start game button, turn border white
     $("#start-game").mouseenter(function(){
-        $(this).css("border", "3px #fff solid"); 
+        $(this).css("border", "3px #fff solid");
     });
-    
+
     //On mouse leaving start game button, return border back to black
     $("#start-game").mouseleave(function(){
         $(this).css("border", "3px #000 solid");
@@ -67,14 +67,14 @@ $(document).ready(function(){
     });
 
 
-})
+});
 
 //Start game
 
 function startUp(){
     $("#counter").text("0");
     newTarget();
-};
+}
 
 //Timer
 
@@ -135,30 +135,30 @@ function newTarget(){
         //Make a random number to serve as new left and top * size of canvas
         let newX = Math.floor(Math.random() * gameAreaWidth);
         let newY = Math.floor(Math.random() * gameAreaHeight);
-        
+
 
         //Targetting the target, edit the css to alter the styling of left and top to new numbers+px
         $(this).css({
             left: newX+"px",
             top: newY+"px"
-        })
-    })
-};
+        });
+    });
+}
 
 //Upgrades
 
 //On mouse enter, the upgrade's border will turn white
 $(".upgrade-card").mouseenter(function(){
-    $(this).css("border", "3px #fff solid")
-})
+    $(this).css("border", "3px #fff solid");
+});
 
 //On mouse eave, the border whill return to black
 $(".upgrade-card").mouseleave(function(){
-    $(this).css("border", "3px #000 solid")
-})
+    $(this).css("border", "3px #000 solid");
+});
 
 //Create a upgrade multiplier and set it to zero
-let upgradeMultiplier = 0
+let upgradeMultiplier = 0;
 
 //Upgrade system
 //On upgrade 1 being clicked, check points
@@ -177,14 +177,14 @@ $("#upgrade-1").click(function(){
     //If the points do equal or are greater than 9, then...
     } else{
         //Make the background turn red
-        $("#upgrade-1").removeClass("bg-yellow").addClass("bg-red")
+        $("#upgrade-1").removeClass("bg-yellow").addClass("bg-red");
 
         //After half a second, return back to yellow
         setTimeout(function() {
             $("#upgrade-1").removeClass("bg-red").addClass("bg-yellow");
         }, 500);
     }
-})
+});
 
 $("#upgrade-2").click(function(){
     if(point>=99){
@@ -198,14 +198,14 @@ $("#upgrade-2").click(function(){
         upgradeMultiplier +=20;
     } else{
         //Make the background turn red
-        $("#upgrade-2").removeClass("bg-yellow").addClass("bg-red")
+        $("#upgrade-2").removeClass("bg-yellow").addClass("bg-red");
 
         //After half a second, return back to yellow
         setTimeout(function() {
             $("#upgrade-2").removeClass("bg-red").addClass("bg-yellow");
         }, 500);
     }
-})
+});
 
 $("#upgrade-3").click(function(){
     if(point>=999){
@@ -219,14 +219,14 @@ $("#upgrade-3").click(function(){
         upgradeMultiplier +=50;
     } else{
         //Make the background turn red
-        $("#upgrade-3").removeClass("bg-yellow").addClass("bg-red")
+        $("#upgrade-3").removeClass("bg-yellow").addClass("bg-red");
 
         //After half a second, return back to yellow
         setTimeout(function() {
             $("#upgrade-3").removeClass("bg-red").addClass("bg-yellow");
         }, 500);
     }
-})
+});
 
 $("#upgrade-4").click(function(){
     if(point>=9999){
@@ -235,19 +235,19 @@ $("#upgrade-4").click(function(){
 
     //Update score to show deducted points
     $("#counter").text(point.toString());
-        
+
     //Add 100 to score multiplier
     upgradeMultiplier +=100;
     } else{
         //Make the background turn red
-        $("#upgrade-4").removeClass("bg-yellow").addClass("bg-red")
+        $("#upgrade-4").removeClass("bg-yellow").addClass("bg-red");
 
         //After half a second, return back to yellow
         setTimeout(function() {
             $("#upgrade-4").removeClass("bg-red").addClass("bg-yellow");
         }, 500);
     }
-})
+});
 
 $("#upgrade-5").click(function(){
     if(point>=99999){
@@ -261,14 +261,14 @@ $("#upgrade-5").click(function(){
         upgradeMultiplier +=1000;
     } else{
         //Make the background turn red
-        $("#upgrade-5").removeClass("bg-yellow").addClass("bg-red")
+        $("#upgrade-5").removeClass("bg-yellow").addClass("bg-red");
 
         //After half a second, return back to yellow
         setTimeout(function() {
             $("#upgrade-5").removeClass("bg-red").addClass("bg-yellow");
         }, 500);
     }
-})
+});
 
 //Game Over
 
@@ -276,7 +276,7 @@ $("#upgrade-5").click(function(){
 //On game over
 function gameOver(){
     //Change game over dive from disabled to visible, then add class to cover screen
-    $("#game-over-div").css("visibility","visible")
+    $("#game-over-div").css("visibility","visible");
     $("#game-over-div").addClass("page-cover border");
 
     //Create a variable containg game over content
@@ -329,4 +329,4 @@ function gameOver(){
     $("#restart-button-text").mouseleave(function(){
         $(this).css("border", "3px #000 solid");
     });
-};
+}
