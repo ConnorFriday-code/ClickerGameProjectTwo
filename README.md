@@ -198,6 +198,8 @@ CSS3
 
 JavaScript
 
+Jquery
+
 ### Frameworks, libraries, and programs used
 
 * [Balsamiq](https://balsamiq.cloud)
@@ -270,7 +272,9 @@ Using the user goals stated at the start of the README, I can use BDD testing to
 
 - There is no noticable lag, delay, or other disturbing occurances while playing
 
-![Image of lighthouse loading times]()
+![Image of lighthouse loading times mobile](readme-images/validation/clicker-lighthouse-mobile.PNG)
+
+![Image of lighthouse loading times desktop](readme-images/validation/clicker-lighthouse-desktop.PNG)
 
 #### Returning user
 
@@ -361,17 +365,17 @@ This has worked in fixing the overlap bug.
 
 Using W3C validator:
 
-[Jigsaw report here]()
+[W3C report here](https://validator.w3.org/nu/?doc=https%3A%2F%2Fconnorfriday-code.github.io%2FClickerGameProjectTwo%2F)
 
 #### CSS
 
 Using jigsaw:
 
-[Jigsaw report here]()
+[Jigsaw report here](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fconnorfriday-code.github.io%2FClickerGameProjectTwo%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 #### JS
 
-[Script](https://jshint.com/)
+[Script]()
 
 #### Lighthouse
 
@@ -399,11 +403,23 @@ The live link can be found here: [Live Project Link](https://connorfriday-code.g
 
 ### Code
 
-*[W3Schools](https://www.w3schools.com/)
+* [W3Schools](https://www.w3schools.com/)
 
 Used to learn about [animate method](https://www.w3schools.com/jquery/eff_animate.asp) for the timer div in jquery.
 
 Used to learn about [user select](https://www.w3schools.com/howto/howto_css_disable_text_selection.asp) to disable selection for the upgrade cards.
+
+* [W3C](https://validator.w3.org/)
+
+Used to find errors and help correct them in my html.
+
+* [Jigsaw](https://jigsaw.w3.org/css-validator/)
+
+Used to find errors and help correct them in my css.
+
+* [jshint](https://jshint.com/)
+
+Used to find errors and help correct them in my js.
 
 ### Media/Content
 
