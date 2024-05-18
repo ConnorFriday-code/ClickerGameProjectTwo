@@ -377,15 +377,15 @@ Using jigsaw:
 
 [Jigsaw report here](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fconnorfriday-code.github.io%2FClickerGameProjectTwo%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-![jshint proof](readme-images/validation/clicker-jshint.png)
-
-![alt text](readme-images/validation/clicker-console.png)
-
 #### JS
 
 Using JShint and console:
 
 [Link to jshint here:](https://jshint.com/)
+
+![jshint proof](readme-images/validation/clicker-jshint.png)
+
+![alt text](readme-images/validation/clicker-console.png)
 
 #### Lighthouse
 
@@ -429,7 +429,7 @@ Used to find errors and help correct them in my CSS.
 
 * [jshint](https://jshint.com/)
 
-Used to find errors and help correct them in my js.
+Used to find errors and help correct them in my JS.
 
 ### Media/Content
 
