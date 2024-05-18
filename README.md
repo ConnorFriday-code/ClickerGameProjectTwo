@@ -110,7 +110,7 @@ Main h1 header:
 
 * Very short and not flashy, won't drag the user's attention away from game
 
-![Image of main header](readme-images/features-images/header-1.PNG)
+![Image of main header](readme-images/features-images/header-1.png)
 
 Instructions h2 header:
 
@@ -118,7 +118,7 @@ Instructions h2 header:
 
 * Shares colours and styling with h1 header to create a common theme
 
-![Image of instructions header](readme-images/features-images/header-2.PNG)
+![Image of instructions header](readme-images/features-images/header-2.png)
 
 Game over h2:
 
@@ -126,7 +126,7 @@ Game over h2:
 
 * Large amount of read is very eye catching and creates a negative colour message
 
-![Image of game-over header](readme-images/features-images/header-3.PNG)
+![Image of game-over header](readme-images/features-images/header-3.png)
 
 #### Score
 
@@ -272,9 +272,9 @@ Using the user goals stated at the start of the README, I can use BDD testing to
 
 - There is no noticable lag, delay, or other disturbing occurances while playing
 
-![Image of lighthouse loading times mobile](readme-images/validation/clicker-lighthouse-mobile.PNG)
+![Image of lighthouse loading times mobile](readme-images/validation/clicker-lighthouse-mobile.png)
 
-![Image of lighthouse loading times desktop](readme-images/validation/clicker-lighthouse-desktop.PNG)
+![Image of lighthouse loading times desktop](readme-images/validation/clicker-lighthouse-desktop.png)
 
 #### Returning user
 
@@ -303,19 +303,19 @@ Using the user goals stated at the start of the README, I can use BDD testing to
 In my original thinking, I believed I could move the image randomly by changing css code for the image with the left and top positioning using jquery and .random(). However, this led to me encountering the bug of the game target not only leaving the game area, but also sometimes exceeding the width/height of the website.
 
 Current code:
-![Script code](readme-images/bug-images/clicker-quick-bug-0.PNG)
+![Script code](readme-images/bug-images/clicker-quick-bug-0.png)
 
 Target in game area:
 
-![Target in game area](readme-images/bug-images/clicker-quick-bug-1.PNG)
+![Target in game area](readme-images/bug-images/clicker-quick-bug-1.png)
 
 Target leaving the game area:
 
-![Target leaving game area](readme-images/bug-images/clicker-quick-bug-2.PNG)
+![Target leaving game area](readme-images/bug-images/clicker-quick-bug-2.png)
 
 Target leaving game area and stretching the page:
 
-![Target stretching webpage](readme-images/bug-images/clicker-quick-bug-3.PNG)
+![Target stretching webpage](readme-images/bug-images/clicker-quick-bug-3.png)
 
 #### The solution: width/height targetting
 
@@ -323,41 +323,41 @@ I believe I can solve this issue by targetting the width and height of the game 
 
 First step would be to save the game area's values of width() and height() to a couple of variables.
 
-![Adding code of grabbing the canvas' width and height](readme-images/bug-images/clicker-quick-bug-4.PNG)
+![Adding code of grabbing the canvas' width and height](readme-images/bug-images/clicker-quick-bug-4.png)
 
 Then, seeing as .random() create a random number between 0 and 1, if I times it by the value I just created, then it should create a number that fits inside the game area's area even at the highest roll.
 
-![Changing the code from multiply by a hundred then by ten to instead just multiply the random function by the canvas' width/height](readme-images/bug-images/clicker-quick-bug-5.PNG)
+![Changing the code from multiply by a hundred then by ten to instead just multiply the random function by the canvas' width/height](readme-images/bug-images/clicker-quick-bug-5.png)
 
 This worked incredibly well, with the target staying within the game area. Except it occasional would slightly leave the game area by the size of itself. What was clearly happening was a high roll number by the .random() (either in width or height) caused the target to be placed at the very edge of the canvas, with the 50px large image cuasing it to overflow and leave the game area.
 
 Target staying in game area (pc)
 
-![Target stays in game area on pc](readme-images/bug-images/clicker-quick-bug-6.PNG)
+![Target stays in game area on pc](readme-images/bug-images/clicker-quick-bug-6.png)
 
 Target staying in area (mobile)
 
-![Target stays in game area on mobile](readme-images/bug-images/clicker-quick-bug-7.PNG)
+![Target stays in game area on mobile](readme-images/bug-images/clicker-quick-bug-7.png)
 
 Target just barely leaving leaving the game area
 
-![Target leaves the game area](readme-images/bug-images/clicker-quick-bug-8.PNG)
+![Target leaves the game area](readme-images/bug-images/clicker-quick-bug-8.png)
 
 The simpliest method I decided to deal with this would be to minus 50px (size of the target image in px)
 
-![Code change to minus 50](readme-images/bug-images/clicker-quick-bug-9.PNG)
+![Code change to minus 50](readme-images/bug-images/clicker-quick-bug-9.png)
 
 However this lead to the inverse happening, where a low roll by the random function would also cause the target to leave
 
-![Target leaves the game area again](readme-images/bug-images/clicker-quick-bug-10.PNG)
+![Target leaves the game area again](readme-images/bug-images/clicker-quick-bug-10.png)
 
 This caused me to remove the +/-50 from the newX/newY variables entirely, and instead move it to the variables gameAreaWidth and gameAreaHeight. I believed that this would solve the problem by reducing the max height and width that would multiply the random later.
 
-![Minus 50 moved to gameAreawidth/height](readme-images/bug-images/clicker-quick-bug-11.PNG)
+![Minus 50 moved to gameAreawidth/height](readme-images/bug-images/clicker-quick-bug-11.png)
 
 This has worked in fixing the overlap bug.
 
-![In a hundred clicks the target has not left the game area](readme-images/bug-images/clicker-quick-bug-12.PNG)
+![In a hundred clicks the target has not left the game area](readme-images/bug-images/clicker-quick-bug-12.png)
 
 ### Validator testing
 
@@ -373,17 +373,23 @@ Using jigsaw:
 
 [Jigsaw report here](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fconnorfriday-code.github.io%2FClickerGameProjectTwo%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
+![jshint proof](readme-images/validation/clicker-jshint.png)
+
+![alt text](readme-images/validation/clicker-console.png)
+
 #### JS
 
-[Script]()
+Using jshint and console:
+
+[Link to jshint here:](https://jshint.com/)
 
 #### Lighthouse
 
 [Link to lighthouse](https://pagespeed.web.dev/analysis/https-connorfriday-code-github-io-ClickerGameProjectTwo-index-html/goabrpinbb?form_factor=desktop)
 
-![Lighthouse report for mobile: performance 93%](readme-images/validation/clicker-lighthouse-mobile.PNG)
+![Lighthouse report for mobile: performance 93%](readme-images/validation/clicker-lighthouse-mobile.png)
 
-![Lighthouse report for desktop: performance 100%](readme-images/validation/clicker-lighthouse-desktop.PNG)
+![Lighthouse report for desktop: performance 100%](readme-images/validation/clicker-lighthouse-desktop.png)
 
 ## Deployment
 
