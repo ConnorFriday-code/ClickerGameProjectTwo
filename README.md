@@ -134,6 +134,8 @@ Game over h2:
 
 * The game tracks the score as it increases and decreases, changing to the user's input
 
+![Image of game-over header](readme-images/features-images/clicker-score.png)
+
 #### Timer
 
 * The timer works in counting down and restarting, reacting to user interaction
@@ -141,6 +143,8 @@ Game over h2:
 * The timer has fancy, animated graphics that stands out from the rest of the website
 
 * The timer is bold and easy to read
+
+![Timer at half way](readme-images/features-images/clicker-timer.png)
 
 #### Game area
 
@@ -152,6 +156,8 @@ Game over h2:
 
 * Bright target makes it easy to read and spot, important for the game
 
+![Game area](readme-images/features-images/clicker-gaming-area.png)
+
 #### Upgrades
 
 * Border changes colour when hovered over, reacting to user interaction
@@ -160,6 +166,8 @@ Game over h2:
 
 * Changes background to red if the user doesn't have enough score to purchase an upgrade, reacting to user interaction
 
+![Upgrade area](readme-images/features-images/clicker-upgrade-area.png)
+
 #### Footer
 
 * Contains copyrights
@@ -167,6 +175,10 @@ Game over h2:
 * Contains social media backup links
 
 * Simple and not very eye-catching to prevent dragging attention away from the game
+
+![Footer area on pc](readme-images/features-images/clicker-footer-pc.png)
+
+![Footer area on mobile](readme-images/features-images/clicker-footer-mobile.png) 
 
 #### Game over
 
@@ -179,6 +191,18 @@ Game over h2:
 * Stops target from being clicked while up
 
 * Restart button changes border colour when hovered over, responding to user interactivity
+
+![Game-over screen](readme-images/features-images/clicker-game-over.png)
+
+#### 404 page
+
+* Clear and easy to read
+
+* Working link back to game/index.html
+
+* Minimal design and content to not add unneeded loading time
+
+![404 error message](readme-images/features-images/clicker-404.png)
 
 ### Features to be added
 
