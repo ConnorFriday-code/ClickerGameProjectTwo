@@ -273,6 +273,35 @@ footer{
     font-size: 32px;
 }
 
+/*------------------------------------------------------------ 404 error*/
+
+#error-div{
+    width: 80%;
+    margin: 20% auto;
+    padding: 10px;
+}
+
+#error-title{
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+#error-link{
+    background-color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    color: #000;
+    font-size: 24px;
+}
+
+#error-link:link{
+    color: #000;
+}
+
+#error-link:visited{
+    color: #000;
+}
+
 /*------------------------------------------------------------ @media to change css for mobile/small*/
 
 @media only screen and (max-width: 600px){
