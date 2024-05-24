@@ -393,7 +393,13 @@ This has worked in fixing the overlap bug.
 
 Using W3C validator:
 
+index.html:
+
 [W3C report here](https://validator.w3.org/nu/?doc=https%3A%2F%2Fconnorfriday-code.github.io%2FClickerGameProjectTwo%2F)
+
+404.html:
+
+[W3C report here](https://validator.w3.org/nu/?doc=https%3A%2F%2Fconnorfriday-code.github.io%2FClickerGameProjectTwo%2F404.html)
 
 #### CSS
 
